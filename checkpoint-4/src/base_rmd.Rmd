@@ -1,0 +1,27 @@
+---
+title: "Base R Markdown"
+author: "Ashley Quiterio"
+date: "2023-01-03"
+output: html_document
+---
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Common Libraries
+```{r}
+# You only need to install packages once
+# install.packages("tidyverse")
+# install.packages("ggplot2")
+```
+
+### Run Every Time
+```{r}
+#You will need to read in the libraries every time you restart RStudio
+library(tidyverse)
+library(ggplot2)
+```
+
